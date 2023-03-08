@@ -1,0 +1,159 @@
+{
+	"info": {
+		"_postman_id": "50e0214e-3d59-48de-8fdf-40b3c2be3c6a",
+		"name": "Design Patterns",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6418624"
+	},
+	"item": [
+		{
+			"name": "Creational",
+			"item": [
+				{
+					"name": "Factory Method",
+					"item": [
+						{
+							"name": "/Mage",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{server}}/FactoryMethod/v1/Warrior",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"FactoryMethod",
+										"v1",
+										"Warrior"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/Warrior",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{server}}/FactoryMethod/v1/createTruck",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"FactoryMethod",
+										"v1",
+										"createTruck"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/Archer",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{server}}/FactoryMethod/v1/Archer",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"FactoryMethod",
+										"v1",
+										"Archer"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Abstract Factory",
+					"item": [
+						{
+							"name": "Art Deco",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{server}}/AbstractFactory/ArtDeco",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"AbstractFactory",
+										"ArtDeco"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Modern",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{server}}/AbstractFactory/Modern",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"AbstractFactory",
+										"Modern"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Victorian",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{server}}/AbstractFactory/Victorian",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"AbstractFactory",
+										"Victorian"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Builder",
+					"item": [
+						{
+							"name": "Make Hawaiian Pizza",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{server}}/Builder/HawaiianPizza",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"Builder",
+										"HawaiianPizza"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
