@@ -9,7 +9,7 @@ import com.fdymendo.learning.designpatterns.creational.builder.service.Director;
 import com.fdymendo.learning.designpatterns.creational.builder.service.HawaiianPizzaBuilder;
 
 @Controller
-@RequestMapping("/Builder")
+@RequestMapping("/Builder/v1")
 public class BuilderController {
 
 

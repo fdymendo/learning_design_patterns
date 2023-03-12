@@ -81,3 +81,13 @@ Document Generation: The Builder pattern can be used to generate documents such 
 Test Data Generation: The Builder pattern can be used to generate test data for automated testing. The builder can provide a set of building blocks such as names, addresses, and phone numbers, and then allow the user to assemble these building blocks into test cases that exercise different parts of the system. The builder can then generate the test data in the desired format such as XML or JSON.
 
 In each of these examples, the Builder pattern is used to create complex objects or structures in a flexible and extensible way. By separating the construction of the object from its representation, the Builder pattern allows you to create objects with different configurations or options without having to create multiple subclasses or constructors. This can make your code more modular, reusable, and easier to maintain over time.
+
+##Prototype
+
+The Prototype pattern is a creational design pattern in object-oriented programming that allows you to create new objects by cloning existing ones, rather than creating new ones from scratch.
+
+In this pattern, you create a prototype object that serves as a blueprint for creating new objects. The prototype object is used as a template for creating new objects by copying its properties and methods. This avoids the need to create new objects from scratch and helps to reduce the number of objects that need to be created.
+
+The key idea behind the prototype pattern is that you create a new object by copying an existing object. This is done by creating a prototype object and then cloning it to create new objects. The prototype object serves as a template for creating new objects, and the cloning process creates new objects that are identical to the prototype object.
+
+The prototype pattern is particularly useful when creating objects that are similar to each other, but not identical. By using the prototype pattern, you can create a set of objects that share common properties and methods, but also have unique features that distinguish them from each other. This can help to reduce code duplication and make your code more efficient and maintainable.

@@ -80,12 +80,13 @@
 								"method": "POST",
 								"header": [],
 								"url": {
-									"raw": "{{server}}/AbstractFactory/ArtDeco",
+									"raw": "{{server}}/AbstractFactory/v1/ArtDeco",
 									"host": [
 										"{{server}}"
 									],
 									"path": [
 										"AbstractFactory",
+										"v1",
 										"ArtDeco"
 									]
 								}
@@ -98,12 +99,13 @@
 								"method": "POST",
 								"header": [],
 								"url": {
-									"raw": "{{server}}/AbstractFactory/Modern",
+									"raw": "{{server}}/AbstractFactory/v1/Modern",
 									"host": [
 										"{{server}}"
 									],
 									"path": [
 										"AbstractFactory",
+										"v1",
 										"Modern"
 									]
 								}
@@ -139,13 +141,57 @@
 								"method": "POST",
 								"header": [],
 								"url": {
-									"raw": "{{server}}/Builder/HawaiianPizza",
+									"raw": "{{server}}/Builder/v1/HawaiianPizza",
 									"host": [
 										"{{server}}"
 									],
 									"path": [
 										"Builder",
+										"v1",
 										"HawaiianPizza"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Prototype",
+					"item": [
+						{
+							"name": "Get Cloned Rectangle",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{server}}/Prototype/v1/Rectangle",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"Prototype",
+										"v1",
+										"Rectangle"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Cloned Circle",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{server}}/Prototype/v1/Circle",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"Prototype",
+										"v1",
+										"Circle"
 									]
 								}
 							},
