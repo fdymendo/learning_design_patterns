@@ -198,6 +198,30 @@
 							"response": []
 						}
 					]
+				},
+				{
+					"name": "Singleton",
+					"item": [
+						{
+							"name": "Get Singleton",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{server}}/Singleton/v1/Singleton",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"Singleton",
+										"v1",
+										"Singleton"
+									]
+								}
+							},
+							"response": []
+						}
+					]
 				}
 			]
 		}
