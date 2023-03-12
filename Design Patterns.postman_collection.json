@@ -198,6 +198,54 @@
 							"response": []
 						}
 					]
+				},
+				{
+					"name": "Singleton",
+					"item": [
+						{
+							"name": "Get Singleton",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{server}}/Singleton/v1/Singleton",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"Singleton",
+										"v1",
+										"Singleton"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Adapter",
+					"item": [
+						{
+							"name": "Get csv",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{server}}/Adapter/v1/Csv",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"Adapter",
+										"v1",
+										"Csv"
+									]
+								}
+							},
+							"response": []
+						}
+					]
 				}
 			]
 		}
