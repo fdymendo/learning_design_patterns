@@ -91,3 +91,9 @@ In this pattern, you create a prototype object that serves as a blueprint for cr
 The key idea behind the prototype pattern is that you create a new object by copying an existing object. This is done by creating a prototype object and then cloning it to create new objects. The prototype object serves as a template for creating new objects, and the cloning process creates new objects that are identical to the prototype object.
 
 The prototype pattern is particularly useful when creating objects that are similar to each other, but not identical. By using the prototype pattern, you can create a set of objects that share common properties and methods, but also have unique features that distinguish them from each other. This can help to reduce code duplication and make your code more efficient and maintainable.
+
+## Adapter
+
+The Adapter pattern is a software design pattern that allows two incompatible interfaces to work together by creating a "wrapper" object that converts the interface of one object so that it matches the interface of the other object. The adapter acts as a bridge between two incompatible interfaces, allowing them to communicate and work together.
+
+The Adapter pattern is often used when you have an existing class or component that cannot be easily modified or integrated into your system because its interface does not match the interface of other components in your system. By using an adapter, you can avoid modifying the existing code and instead create a new class that "adapts" the incompatible interface to a compatible one.
