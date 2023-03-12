@@ -1,7 +1,6 @@
 # learning_design_patterns
 
-* Factory method:
-* Abstract factory
+This microservice is fully-contructed for ChatGPT, explain the design patterns
 
 ## Factory Method
 
@@ -91,3 +90,11 @@ In this pattern, you create a prototype object that serves as a blueprint for cr
 The key idea behind the prototype pattern is that you create a new object by copying an existing object. This is done by creating a prototype object and then cloning it to create new objects. The prototype object serves as a template for creating new objects, and the cloning process creates new objects that are identical to the prototype object.
 
 The prototype pattern is particularly useful when creating objects that are similar to each other, but not identical. By using the prototype pattern, you can create a set of objects that share common properties and methods, but also have unique features that distinguish them from each other. This can help to reduce code duplication and make your code more efficient and maintainable.
+
+## Singleton
+
+The Singleton pattern is a software design pattern that restricts the instantiation of a class to a single instance and ensures that the instance can be easily accessed globally throughout the application. In other words, the Singleton pattern allows us to create a class with only one object or instance that can be shared and used by multiple parts of the program.
+
+The Singleton pattern is often used when there is a need to control access to a shared resource or when there should only be one instance of a certain class in the program. Examples of this might include a database connection or a logging system.
+
+To implement the Singleton pattern, a class typically defines a private constructor to prevent direct instantiation of the class from outside, and provides a static method or property that allows access to a single instance of the class. This method or property checks if an instance of the class has already been created, and if not, creates one and returns it. Subsequent calls to the method or property simply return the existing instance.
