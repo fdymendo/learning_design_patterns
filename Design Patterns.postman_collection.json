@@ -222,6 +222,30 @@
 							"response": []
 						}
 					]
+				},
+				{
+					"name": "Adapter",
+					"item": [
+						{
+							"name": "Get csv",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{server}}/Adapter/v1/Csv",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"Adapter",
+										"v1",
+										"Csv"
+									]
+								}
+							},
+							"response": []
+						}
+					]
 				}
 			]
 		}
