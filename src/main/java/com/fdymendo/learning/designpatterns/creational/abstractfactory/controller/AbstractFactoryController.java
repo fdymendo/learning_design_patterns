@@ -10,7 +10,7 @@ import com.fdymendo.learning.designpatterns.creational.abstractfactory.service.M
 import com.fdymendo.learning.designpatterns.creational.abstractfactory.service.VictorianFurnitureFactory;
 
 @RestController
-@RequestMapping("/AbstractFactory")
+@RequestMapping("/AbstractFactory/v1")
 public class AbstractFactoryController {
 
 
