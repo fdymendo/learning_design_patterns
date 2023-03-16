@@ -104,3 +104,24 @@ The Singleton pattern is a software design pattern that restricts the instantiat
 The Singleton pattern is often used when there is a need to control access to a shared resource or when there should only be one instance of a certain class in the program. Examples of this might include a database connection or a logging system.
 
 To implement the Singleton pattern, a class typically defines a private constructor to prevent direct instantiation of the class from outside, and provides a static method or property that allows access to a single instance of the class. This method or property checks if an instance of the class has already been created, and if not, creates one and returns it. Subsequent calls to the method or property simply return the existing instance.
+
+### Bridge 
+
+The Bridge pattern is a design pattern in software engineering that separates the abstraction (interface or abstract class) from its implementation, allowing them to vary independently.
+
+The Bridge pattern decouples an abstraction from its implementation so that the two can vary independently. It does this by creating an abstraction hierarchy that is separate from the implementation hierarchy, and then providing a bridge that connects the two hierarchies.
+
+In this pattern, there are two separate class hierarchies: the abstraction hierarchy and the implementation hierarchy. The abstraction hierarchy defines the interface for the client, while the implementation hierarchy defines how the interface is implemented.
+
+The Bridge pattern allows you to change the implementation of an abstraction without affecting the clients that use it. This makes it easier to maintain and extend your code, and also makes it possible to create new implementations without having to modify the existing code.
+
+Here are some benefits of using the Bridge pattern:
+
+It allows you to decouple the abstraction from its implementation, which makes the code more flexible and easier to maintain.
+It allows you to change the implementation of an abstraction without affecting the clients that use it.
+It promotes code reuse, since you can create new implementations of the abstraction without having to modify the existing code.
+Some possible use cases of the Bridge pattern include:
+
+When you want to create a platform-independent interface that can be used with multiple implementations.
+When you want to decouple an interface from its implementation to make the code more flexible and maintainable.
+When you want to hide implementation details from the clients that use the interface.
