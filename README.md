@@ -125,3 +125,15 @@ Some possible use cases of the Bridge pattern include:
 When you want to create a platform-independent interface that can be used with multiple implementations.
 When you want to decouple an interface from its implementation to make the code more flexible and maintainable.
 When you want to hide implementation details from the clients that use the interface.
+
+## Composite
+
+The Composite pattern is a structural design pattern that allows you to treat a group of objects in the same way as a single object. It lets you compose objects into tree structures and then work with these structures as if they were individual objects.
+
+The key idea behind the Composite pattern is to create a common interface, known as the Component interface, that all objects in the composition will implement. This interface typically includes methods for adding, removing, and getting child components, as well as methods for performing operations on the composite structure.
+
+There are two main types of objects in a Composite pattern: Leaf and Composite. Leaf objects are the simplest building blocks and do not have any child components. Composite objects, on the other hand, can have one or more child components, which can be other Composite objects or Leaf objects.
+
+One of the main advantages of the Composite pattern is that it allows you to write code that works with complex object hierarchies, without having to worry about the details of individual objects in the hierarchy. This makes it easy to add new types of objects to the hierarchy, as they can be treated in the same way as existing objects.
+
+The Composite pattern is commonly used in graphical user interface (GUI) frameworks, file systems, and organizational structures, where objects can be arranged in a tree-like structure.
