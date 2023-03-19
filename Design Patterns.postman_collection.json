@@ -246,6 +246,97 @@
 							"response": []
 						}
 					]
+				},
+				{
+					"name": "Bridge",
+					"item": [
+						{
+							"name": "Get Circle",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{server}}/Bridge/v1/Circle",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"Bridge",
+										"v1",
+										"Circle"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Composite",
+					"item": [
+						{
+							"name": "Directory",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{server}}/Composite/v1/Directory",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"Composite",
+										"v1",
+										"Directory"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Decorator",
+					"item": [
+						{
+							"name": "Get Milk",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{server}}/Decorator/v1/Milk",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"Decorator",
+										"v1",
+										"Milk"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Sugar",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{server}}/Decorator/v1/Sugar",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"Decorator",
+										"v1",
+										"Sugar"
+									]
+								}
+							},
+							"response": []
+						}
+					]
 				}
 			]
 		}
