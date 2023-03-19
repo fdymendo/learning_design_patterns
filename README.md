@@ -91,12 +91,6 @@ The key idea behind the prototype pattern is that you create a new object by cop
 
 The prototype pattern is particularly useful when creating objects that are similar to each other, but not identical. By using the prototype pattern, you can create a set of objects that share common properties and methods, but also have unique features that distinguish them from each other. This can help to reduce code duplication and make your code more efficient and maintainable.
 
-## Adapter
-
-The Adapter pattern is a software design pattern that allows two incompatible interfaces to work together by creating a "wrapper" object that converts the interface of one object so that it matches the interface of the other object. The adapter acts as a bridge between two incompatible interfaces, allowing them to communicate and work together.
-
-The Adapter pattern is often used when you have an existing class or component that cannot be easily modified or integrated into your system because its interface does not match the interface of other components in your system. By using an adapter, you can avoid modifying the existing code and instead create a new class that "adapts" the incompatible interface to a compatible one.
-
 ## Singleton
 
 The Singleton pattern is a software design pattern that restricts the instantiation of a class to a single instance and ensures that the instance can be easily accessed globally throughout the application. In other words, the Singleton pattern allows us to create a class with only one object or instance that can be shared and used by multiple parts of the program.
@@ -126,14 +120,8 @@ When you want to create a platform-independent interface that can be used with m
 When you want to decouple an interface from its implementation to make the code more flexible and maintainable.
 When you want to hide implementation details from the clients that use the interface.
 
-## Composite
+## Adapter
 
-The Composite pattern is a structural design pattern that allows you to treat a group of objects in the same way as a single object. It lets you compose objects into tree structures and then work with these structures as if they were individual objects.
+The Adapter pattern is a software design pattern that allows two incompatible interfaces to work together by creating a "wrapper" object that converts the interface of one object so that it matches the interface of the other object. The adapter acts as a bridge between two incompatible interfaces, allowing them to communicate and work together.
 
-The key idea behind the Composite pattern is to create a common interface, known as the Component interface, that all objects in the composition will implement. This interface typically includes methods for adding, removing, and getting child components, as well as methods for performing operations on the composite structure.
-
-There are two main types of objects in a Composite pattern: Leaf and Composite. Leaf objects are the simplest building blocks and do not have any child components. Composite objects, on the other hand, can have one or more child components, which can be other Composite objects or Leaf objects.
-
-One of the main advantages of the Composite pattern is that it allows you to write code that works with complex object hierarchies, without having to worry about the details of individual objects in the hierarchy. This makes it easy to add new types of objects to the hierarchy, as they can be treated in the same way as existing objects.
-
-The Composite pattern is commonly used in graphical user interface (GUI) frameworks, file systems, and organizational structures, where objects can be arranged in a tree-like structure.
+The Adapter pattern is often used when you have an existing class or component that cannot be easily modified or integrated into your system because its interface does not match the interface of other components in your system. By using an adapter, you can avoid modifying the existing code and instead create a new class that "adapts" the incompatible interface to a compatible one.
