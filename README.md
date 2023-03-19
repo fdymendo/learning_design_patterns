@@ -128,3 +128,21 @@ Some possible use cases of the Bridge pattern include:
 When you want to create a platform-independent interface that can be used with multiple implementations.
 When you want to decouple an interface from its implementation to make the code more flexible and maintainable.
 When you want to hide implementation details from the clients that use the interface.
+
+## Decorator
+
+The Decorator pattern is a structural design pattern that allows behavior to be added to an individual object, either statically or dynamically, without affecting the behavior of other objects from the same class. It is used to add new functionality to an existing object by wrapping it in one or more decorators.
+
+The key idea behind the Decorator pattern is to create a set of decorator classes that are used to wrap concrete components. Decorator classes mirror the type of the components they decorate, so they have the same interface as the component they are decorating. The Decorator pattern makes use of the principle of composition rather than inheritance.
+
+The Decorator pattern consists of the following components:
+
+Component: an interface or abstract class that defines the operations that can be altered by decorators.
+Concrete Component: a class that implements the Component interface or abstract class.
+Decorator: an abstract class that implements the Component interface or abstract class and maintains a reference to an object of the same type as the Component.
+Concrete Decorator: a class that extends the Decorator and adds new behavior to the wrapped object.
+The Decorator pattern allows for the creation of an object that has different combinations of behavior at runtime by wrapping it with different combinations of decorators.
+
+The Decorator pattern is commonly used in scenarios where you need to add behavior to an object in a flexible and dynamic way, without affecting the behavior of other objects from the same class. For example, it can be used to add new features to a product in an e-commerce website, such as gift wrapping or custom messages, without modifying the existing product classes.
+
+In summary, the Decorator pattern provides a flexible alternative to subclassing for extending functionality dynamically at runtime.
