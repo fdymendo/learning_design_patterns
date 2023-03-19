@@ -91,15 +91,6 @@ The key idea behind the prototype pattern is that you create a new object by cop
 
 The prototype pattern is particularly useful when creating objects that are similar to each other, but not identical. By using the prototype pattern, you can create a set of objects that share common properties and methods, but also have unique features that distinguish them from each other. This can help to reduce code duplication and make your code more efficient and maintainable.
 
-<<<<<<< HEAD
-## Adapter
-
-The Adapter pattern is a software design pattern that allows two incompatible interfaces to work together by creating a "wrapper" object that converts the interface of one object so that it matches the interface of the other object. The adapter acts as a bridge between two incompatible interfaces, allowing them to communicate and work together.
-
-The Adapter pattern is often used when you have an existing class or component that cannot be easily modified or integrated into your system because its interface does not match the interface of other components in your system. By using an adapter, you can avoid modifying the existing code and instead create a new class that "adapts" the incompatible interface to a compatible one.
-
-=======
->>>>>>> 63fe57b1e775dbae45c35c5ca4c47ab3e202bd6f
 ## Singleton
 
 The Singleton pattern is a software design pattern that restricts the instantiation of a class to a single instance and ensures that the instance can be easily accessed globally throughout the application. In other words, the Singleton pattern allows us to create a class with only one object or instance that can be shared and used by multiple parts of the program.
@@ -129,20 +120,8 @@ When you want to create a platform-independent interface that can be used with m
 When you want to decouple an interface from its implementation to make the code more flexible and maintainable.
 When you want to hide implementation details from the clients that use the interface.
 
-## Decorator
+## Adapter
 
-The Decorator pattern is a structural design pattern that allows behavior to be added to an individual object, either statically or dynamically, without affecting the behavior of other objects from the same class. It is used to add new functionality to an existing object by wrapping it in one or more decorators.
+The Adapter pattern is a software design pattern that allows two incompatible interfaces to work together by creating a "wrapper" object that converts the interface of one object so that it matches the interface of the other object. The adapter acts as a bridge between two incompatible interfaces, allowing them to communicate and work together.
 
-The key idea behind the Decorator pattern is to create a set of decorator classes that are used to wrap concrete components. Decorator classes mirror the type of the components they decorate, so they have the same interface as the component they are decorating. The Decorator pattern makes use of the principle of composition rather than inheritance.
-
-The Decorator pattern consists of the following components:
-
-Component: an interface or abstract class that defines the operations that can be altered by decorators.
-Concrete Component: a class that implements the Component interface or abstract class.
-Decorator: an abstract class that implements the Component interface or abstract class and maintains a reference to an object of the same type as the Component.
-Concrete Decorator: a class that extends the Decorator and adds new behavior to the wrapped object.
-The Decorator pattern allows for the creation of an object that has different combinations of behavior at runtime by wrapping it with different combinations of decorators.
-
-The Decorator pattern is commonly used in scenarios where you need to add behavior to an object in a flexible and dynamic way, without affecting the behavior of other objects from the same class. For example, it can be used to add new features to a product in an e-commerce website, such as gift wrapping or custom messages, without modifying the existing product classes.
-
-In summary, the Decorator pattern provides a flexible alternative to subclassing for extending functionality dynamically at runtime.
+The Adapter pattern is often used when you have an existing class or component that cannot be easily modified or integrated into your system because its interface does not match the interface of other components in your system. By using an adapter, you can avoid modifying the existing code and instead create a new class that "adapts" the incompatible interface to a compatible one.
