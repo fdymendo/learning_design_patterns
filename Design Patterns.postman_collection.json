@@ -337,6 +337,49 @@
 							"response": []
 						}
 					]
+				},
+				{
+					"name": "Facade",
+					"item": [
+						{
+							"name": "Iniciar",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{server}}/Facade/v1/Iniciar",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"Facade",
+										"v1",
+										"Iniciar"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Apagar",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{server}}/Facade/v1/Apagar",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"Facade",
+										"v1",
+										"Apagar"
+									]
+								}
+							},
+							"response": []
+						}
+					]
 				}
 			]
 		}
