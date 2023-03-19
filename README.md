@@ -125,3 +125,13 @@ When you want to hide implementation details from the clients that use the inter
 The Adapter pattern is a software design pattern that allows two incompatible interfaces to work together by creating a "wrapper" object that converts the interface of one object so that it matches the interface of the other object. The adapter acts as a bridge between two incompatible interfaces, allowing them to communicate and work together.
 
 The Adapter pattern is often used when you have an existing class or component that cannot be easily modified or integrated into your system because its interface does not match the interface of other components in your system. By using an adapter, you can avoid modifying the existing code and instead create a new class that "adapts" the incompatible interface to a compatible one.
+
+### Facade
+
+The Facade pattern is a software design pattern that provides a simplified interface to a larger body of code, such as a library, subsystem or framework. It is used to hide the complexity of a system and provide clients with a simple interface that they can use to interact with the system. The Facade pattern is often used to decouple clients from complex systems, to improve code readability and maintainability, and to promote code reuse.
+
+In the Facade pattern, a single class (the "facade") provides a simple interface to a complex subsystem of classes. The facade class contains methods that delegate to the underlying subsystem, but the clients of the facade are not aware of the underlying complexity. The facade isolates clients from the details of the subsystem, and provides a simpler and more convenient interface to the system.
+
+Here's an example of how the Facade pattern can be used in Java:
+
+Suppose we have a complex subsystem that contains several classes that need to be initialized and configured in a specific way before they can be used. This initialization process can be quite complex and error-prone, and it can be difficult for clients to configure the subsystem correctly. We can use the Facade pattern to simplify the interface to the subsystem and hide its complexity from clients.
