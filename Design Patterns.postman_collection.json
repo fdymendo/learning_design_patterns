@@ -380,6 +380,19 @@
 							"response": []
 						}
 					]
+				},
+				{
+					"name": "Flyweight",
+					"item": [
+						{
+							"name": "Get Point",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						}
+					]
 				}
 			]
 		}
