@@ -388,7 +388,85 @@
 							"name": "Get Point",
 							"request": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": "{{server}}/Flyweight/v1/GetPoint",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"Flyweight",
+										"v1",
+										"GetPoint"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Proxy",
+					"item": [
+						{
+							"name": "Complex process",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{server}}/Proxy/v1/ComplexProcess",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"Proxy",
+										"v1",
+										"ComplexProcess"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Chain Responsability",
+					"item": [
+						{
+							"name": "ValueLow",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{server}}/ChainResponsability/v1/ValueLow",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"ChainResponsability",
+										"v1",
+										"ValueLow"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ValueHigh",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{server}}/ChainResponsability/v1/ValueHigh",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"ChainResponsability",
+										"v1",
+										"ValueHigh"
+									]
+								}
 							},
 							"response": []
 						}
