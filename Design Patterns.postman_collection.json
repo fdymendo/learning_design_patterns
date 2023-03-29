@@ -471,6 +471,49 @@
 							"response": []
 						}
 					]
+				},
+				{
+					"name": "Command",
+					"item": [
+						{
+							"name": "Execute Button",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{server}}/Command/v1/Execute",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"Command",
+										"v1",
+										"Execute"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "UndoButton",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{server}}/Command/v1/Undo",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"Command",
+										"v1",
+										"Undo"
+									]
+								}
+							},
+							"response": []
+						}
+					]
 				}
 			]
 		}
