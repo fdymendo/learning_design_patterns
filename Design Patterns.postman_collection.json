@@ -514,6 +514,30 @@
 							"response": []
 						}
 					]
+				},
+				{
+					"name": "Iterator",
+					"item": [
+						{
+							"name": "New Request",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{server}}/Iterator/v1/Elements",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"Iterator",
+										"v1",
+										"Elements"
+									]
+								}
+							},
+							"response": []
+						}
+					]
 				}
 			]
 		}

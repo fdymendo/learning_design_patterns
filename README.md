@@ -224,3 +224,20 @@ Suppose we have a banking application that processes transactions such as transf
 Each command object encapsulates the logic for performing a specific transaction. When a transaction is initiated, a corresponding command object is created and added to a command queue. The command queue is processed sequentially, with each command object executing its corresponding transaction.
 
 This approach allows us to decouple the transaction processing logic from the rest of the application, and also allows us to support undoable transactions. We can implement undo by creating an inverse command object for each command object, which performs the opposite of the original transaction. When an undo is initiated, the inverse command objects are processed in reverse order to undo the transactions.
+
+### Iterator
+
+The Iterator Pattern is a behavioral pattern that provides a way to access the elements of a collection in a sequential manner without exposing its underlying implementation. It defines a separate object that encapsulates the traversal of the collection, decoupling the algorithm for accessing the collection from the collection itself.
+
+Here's a brief description of how the Iterator Pattern works:
+
+The client requests an iterator from the collection object.
+The collection object creates and returns an iterator object.
+The client uses the iterator object to access the elements of the collection.
+Two examples of implementation of the Iterator Pattern are:
+
+Java's Iterator Interface: Java's Collection Framework provides the Iterator interface as a way to access the elements of a collection in a sequential manner. The Iterator interface defines methods like hasNext() and next() that allow a client to iterate over the elements of a collection without knowing the underlying implementation of the collection.
+
+Python's Generator Function: Python's Generator function can be used to implement the Iterator Pattern. A Generator function returns an iterator object that can be used to iterate over a sequence of values. The client can use the iterator object to access the values of the sequence without knowing the underlying implementation. The use of Generator function as iterator in Python makes it more efficient and easy to read.
+
+Overall, the Iterator Pattern provides a clean and efficient way to access the elements of a collection without exposing its underlying implementation. It can be used in a variety of programming languages and contexts, and is especially useful when dealing with large or complex collections.
