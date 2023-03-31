@@ -222,6 +222,322 @@
 							"response": []
 						}
 					]
+				},
+				{
+					"name": "Adapter",
+					"item": [
+						{
+							"name": "Get csv",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{server}}/Adapter/v1/Csv",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"Adapter",
+										"v1",
+										"Csv"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Bridge",
+					"item": [
+						{
+							"name": "Get Circle",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{server}}/Bridge/v1/Circle",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"Bridge",
+										"v1",
+										"Circle"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Composite",
+					"item": [
+						{
+							"name": "Directory",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{server}}/Composite/v1/Directory",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"Composite",
+										"v1",
+										"Directory"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Decorator",
+					"item": [
+						{
+							"name": "Get Milk",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{server}}/Decorator/v1/Milk",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"Decorator",
+										"v1",
+										"Milk"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Sugar",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{server}}/Decorator/v1/Sugar",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"Decorator",
+										"v1",
+										"Sugar"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Facade",
+					"item": [
+						{
+							"name": "Iniciar",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{server}}/Facade/v1/Iniciar",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"Facade",
+										"v1",
+										"Iniciar"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Apagar",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{server}}/Facade/v1/Apagar",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"Facade",
+										"v1",
+										"Apagar"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Flyweight",
+					"item": [
+						{
+							"name": "Get Point",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{server}}/Flyweight/v1/GetPoint",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"Flyweight",
+										"v1",
+										"GetPoint"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Proxy",
+					"item": [
+						{
+							"name": "Complex process",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{server}}/Proxy/v1/ComplexProcess",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"Proxy",
+										"v1",
+										"ComplexProcess"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Chain Responsability",
+					"item": [
+						{
+							"name": "ValueLow",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{server}}/ChainResponsability/v1/ValueLow",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"ChainResponsability",
+										"v1",
+										"ValueLow"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ValueHigh",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{server}}/ChainResponsability/v1/ValueHigh",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"ChainResponsability",
+										"v1",
+										"ValueHigh"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Command",
+					"item": [
+						{
+							"name": "Execute Button",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{server}}/Command/v1/Execute",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"Command",
+										"v1",
+										"Execute"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "UndoButton",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{server}}/Command/v1/Undo",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"Command",
+										"v1",
+										"Undo"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Iterator",
+					"item": [
+						{
+							"name": "New Request",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{server}}/Iterator/v1/Elements",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"Iterator",
+										"v1",
+										"Elements"
+									]
+								}
+							},
+							"response": []
+						}
+					]
 				}
 			]
 		}
