@@ -259,3 +259,20 @@ Java's Event Handling Mechanism: Java's event handling mechanism uses the Mediat
 Online Marketplace: An online marketplace can use the Mediator Pattern to facilitate communication between buyers and sellers. The mediator object acts as an intermediary between the buyers and sellers, enabling them to communicate and negotiate with each other without directly interacting. This promotes a more secure and efficient marketplace, as buyers and sellers do not need to share their personal information or interact directly with each other.
 
 Overall, the Mediator Pattern promotes loose coupling by enabling communication between objects through a mediator object. It is useful in situations where objects need to communicate with each other but should not be tightly coupled. The Mediator Pattern can be applied in a wide range of contexts, from event handling to online marketplaces.
+
+### Memento
+
+The Memento Pattern is a behavioral pattern that allows an object to capture and save its internal state so that it can be restored later, without violating encapsulation. It is used to provide a way to store and restore the state of an object without exposing its internal details to the rest of the system.
+
+Here's a brief description of how the Memento Pattern works:
+
+An object (the Originator) creates a Memento object that contains a snapshot of its current state.
+The Memento object is passed to a caretaker object for safekeeping.
+Later, the Originator can request that the caretaker restore its state from the Memento.
+Two examples of implementation of the Memento Pattern are:
+
+Text Editors: A text editor can use the Memento Pattern to implement an "Undo" feature. Each time the user performs an action (such as typing, deleting, or copying text), the editor creates a Memento object that captures the editor's state. The Memento is then passed to a caretaker object (such as a history buffer) for safekeeping. If the user later chooses to undo an action, the editor can request that the caretaker restore the editor's state from the appropriate Memento.
+
+Games: A game can use the Memento Pattern to implement a "Save Game" feature. When the player reaches a certain checkpoint or completes a level, the game creates a Memento object that captures the game's state (such as the player's health, location, and progress). The Memento is then passed to a caretaker object (such as a save game manager) for safekeeping. If the player later chooses to resume the game from a saved point, the game can request that the caretaker restore the game's state from the appropriate Memento.
+
+Overall, the Memento Pattern is useful when you need to be able to save and restore the state of an object without exposing its internal details to the rest of the system. It can be applied in a wide range of contexts, from text editors to games.
