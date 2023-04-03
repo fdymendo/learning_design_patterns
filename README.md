@@ -241,3 +241,21 @@ Java's Iterator Interface: Java's Collection Framework provides the Iterator int
 Python's Generator Function: Python's Generator function can be used to implement the Iterator Pattern. A Generator function returns an iterator object that can be used to iterate over a sequence of values. The client can use the iterator object to access the values of the sequence without knowing the underlying implementation. The use of Generator function as iterator in Python makes it more efficient and easy to read.
 
 Overall, the Iterator Pattern provides a clean and efficient way to access the elements of a collection without exposing its underlying implementation. It can be used in a variety of programming languages and contexts, and is especially useful when dealing with large or complex collections.
+
+
+### Mediator
+
+The Mediator Pattern is a behavioral pattern that promotes loose coupling by enabling communication between objects through a mediator object. It defines an object that encapsulates how a set of objects interact with each other, decoupling the objects from each other and promoting a more modular and maintainable design.
+
+Here's a brief description of how the Mediator Pattern works:
+
+Objects within a system need to communicate with each other.
+Rather than communicating directly with each other, the objects communicate through a mediator object.
+The mediator object encapsulates the communication logic between the objects.
+Two examples of implementation of the Mediator Pattern are:
+
+Java's Event Handling Mechanism: Java's event handling mechanism uses the Mediator Pattern to allow communication between event sources and event listeners. When an event occurs, the event source sends a message to the mediator object, which then forwards the message to the appropriate event listener. This decouples the event source and event listener, making it easier to add or remove event listeners without affecting the event source.
+
+Online Marketplace: An online marketplace can use the Mediator Pattern to facilitate communication between buyers and sellers. The mediator object acts as an intermediary between the buyers and sellers, enabling them to communicate and negotiate with each other without directly interacting. This promotes a more secure and efficient marketplace, as buyers and sellers do not need to share their personal information or interact directly with each other.
+
+Overall, the Mediator Pattern promotes loose coupling by enabling communication between objects through a mediator object. It is useful in situations where objects need to communicate with each other but should not be tightly coupled. The Mediator Pattern can be applied in a wide range of contexts, from event handling to online marketplaces.
