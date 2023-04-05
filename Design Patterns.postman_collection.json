@@ -404,6 +404,54 @@
 							"response": []
 						}
 					]
+				},
+				{
+					"name": "Memento",
+					"item": [
+						{
+							"name": "Send Message Copy",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{server}}/Memento/v1/RestoreItem",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"Memento",
+										"v1",
+										"RestoreItem"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Observer",
+					"item": [
+						{
+							"name": "State App",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{server}}/Observer/v1/StateApp",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"Observer",
+										"v1",
+										"StateApp"
+									]
+								}
+							},
+							"response": []
+						}
+					]
 				}
 			]
 		},

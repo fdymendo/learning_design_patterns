@@ -276,3 +276,21 @@ Text Editors: A text editor can use the Memento Pattern to implement an "Undo" f
 Games: A game can use the Memento Pattern to implement a "Save Game" feature. When the player reaches a certain checkpoint or completes a level, the game creates a Memento object that captures the game's state (such as the player's health, location, and progress). The Memento is then passed to a caretaker object (such as a save game manager) for safekeeping. If the player later chooses to resume the game from a saved point, the game can request that the caretaker restore the game's state from the appropriate Memento.
 
 Overall, the Memento Pattern is useful when you need to be able to save and restore the state of an object without exposing its internal details to the rest of the system. It can be applied in a wide range of contexts, from text editors to games.
+
+### Observer
+
+The Observer Pattern is a behavioral pattern that allows one or more objects to be notified of changes to the state of another object. It is used to establish a one-to-many dependency between objects, where changes to one object can automatically trigger updates in the other objects.
+
+Here's a brief description of how the Observer Pattern works:
+
+The Subject (or Observable) is the object that needs to be monitored for changes to its state.
+The Observers are the objects that need to be notified of changes to the Subject's state.
+When the Subject's state changes, it notifies all of its Observers by calling a method on each Observer.
+Each Observer can then retrieve the updated state of the Subject and take appropriate action.
+Two examples of implementation of the Observer Pattern are:
+
+Stock Market: A stock market can use the Observer Pattern to notify investors of changes in stock prices. The market would act as the Subject, while the investors would act as Observers. When the price of a stock changes, the market would notify all of its investors by calling a method on each Observer. Each investor could then retrieve the updated stock price and decide whether to buy, sell, or hold their shares.
+
+Weather Station: A weather station can use the Observer Pattern to notify people of changes in weather conditions. The station would act as the Subject, while people (such as hikers or farmers) would act as Observers. When the weather changes (such as a drop in temperature or an increase in wind speed), the station would notify all of its Observers by calling a method on each one. Each person could then retrieve the updated weather conditions and decide whether to change their plans (such as staying indoors or wearing warmer clothing).
+
+Overall, the Observer Pattern is useful when you need to establish a one-to-many relationship between objects, where changes to one object need to be automatically propagated to other objects. It can be applied in a wide range of contexts, from stock markets to weather stations.
