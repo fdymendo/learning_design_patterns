@@ -294,3 +294,21 @@ Stock Market: A stock market can use the Observer Pattern to notify investors of
 Weather Station: A weather station can use the Observer Pattern to notify people of changes in weather conditions. The station would act as the Subject, while people (such as hikers or farmers) would act as Observers. When the weather changes (such as a drop in temperature or an increase in wind speed), the station would notify all of its Observers by calling a method on each one. Each person could then retrieve the updated weather conditions and decide whether to change their plans (such as staying indoors or wearing warmer clothing).
 
 Overall, the Observer Pattern is useful when you need to establish a one-to-many relationship between objects, where changes to one object need to be automatically propagated to other objects. It can be applied in a wide range of contexts, from stock markets to weather stations.
+
+### State
+
+The State Pattern is a behavioral pattern that allows an object to change its behavior when its internal state changes. It is useful when an object needs to perform different operations based on its current state, and when adding new states can lead to a lot of conditional statements.
+
+Here's a brief description of how the State Pattern works:
+
+The Context is the object that needs to change its behavior based on its internal state.
+The State is an interface or abstract class that defines the behavior of the Context based on its internal state.
+Concrete State classes implement the State interface or abstract class and provide different implementations of the behavior based on the internal state of the Context.
+When the internal state of the Context changes, it updates its current State object to the appropriate Concrete State object.
+Two examples of implementation of the State Pattern are:
+
+Vending Machine: A vending machine can use the State Pattern to change its behavior based on the amount of money inserted and the availability of the selected item. The vending machine would act as the Context, while the different states (such as "No Money", "Not Enough Money", "Enough Money", "Sold Out") would act as Concrete State classes. When a user inserts money and selects an item, the vending machine would update its internal state and change its behavior accordingly (such as dispensing the item or returning the money).
+
+Traffic Light: A traffic light can use the State Pattern to change its behavior based on the current state of traffic flow. The traffic light would act as the Context, while the different states (such as "Green Light", "Yellow Light", "Red Light") would act as Concrete State classes. When traffic flow changes (such as heavy traffic or an accident), the traffic light would update its internal state and change its behavior accordingly (such as extending the duration of the red light).
+
+Overall, the State Pattern is useful when an object needs to change its behavior based on its internal state, and when adding new states can lead to a lot of conditional statements. It can be applied in a wide range of contexts, from vending machines to traffic lights.
