@@ -452,6 +452,51 @@
 							"response": []
 						}
 					]
+				},
+				{
+					"name": "State",
+					"item": [
+						{
+							"name": "Close Door",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{server}}/State/v1/Door/close",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"State",
+										"v1",
+										"Door",
+										"close"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Open Door",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{server}}/State/v1/Door/open",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"State",
+										"v1",
+										"Door",
+										"open"
+									]
+								}
+							},
+							"response": []
+						}
+					]
 				}
 			]
 		},
