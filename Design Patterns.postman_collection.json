@@ -497,6 +497,75 @@
 							"response": []
 						}
 					]
+				},
+				{
+					"name": "Strategy",
+					"item": [
+						{
+							"name": "Payment Credit Card",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{server}}/Strategy/v1/Payment/CreditCard",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"Strategy",
+										"v1",
+										"Payment",
+										"CreditCard"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Payment Paypal",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{server}}/Strategy/v1/Payment/PayPal",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"Strategy",
+										"v1",
+										"Payment",
+										"PayPal"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Template Method",
+					"item": [
+						{
+							"name": "Process order",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{server}}/TemplateMethod/v1/ProcessOrder",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"TemplateMethod",
+										"v1",
+										"ProcessOrder"
+									]
+								}
+							},
+							"response": []
+						}
+					]
 				}
 			]
 		},
