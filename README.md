@@ -312,3 +312,22 @@ Vending Machine: A vending machine can use the State Pattern to change its behav
 Traffic Light: A traffic light can use the State Pattern to change its behavior based on the current state of traffic flow. The traffic light would act as the Context, while the different states (such as "Green Light", "Yellow Light", "Red Light") would act as Concrete State classes. When traffic flow changes (such as heavy traffic or an accident), the traffic light would update its internal state and change its behavior accordingly (such as extending the duration of the red light).
 
 Overall, the State Pattern is useful when an object needs to change its behavior based on its internal state, and when adding new states can lead to a lot of conditional statements. It can be applied in a wide range of contexts, from vending machines to traffic lights.
+
+
+###
+
+The Strategy Pattern is a behavioral pattern that allows you to define a family of algorithms, encapsulate each one as an object, and make them interchangeable. It allows you to change the behavior of an object at runtime without changing the implementation of the object itself.
+
+Here's a brief description of how the Strategy Pattern works:
+
+The Context is the object that needs to perform a particular behavior.
+The Strategy is an interface or abstract class that defines the behavior that the Context can use.
+Concrete Strategy classes implement the Strategy interface or abstract class and provide different implementations of the behavior.
+The Context holds a reference to a Strategy object and delegates behavior to it.
+Two examples of implementation of the Strategy Pattern are:
+
+Sorting Algorithms: A sorting algorithm can use the Strategy Pattern to change its behavior based on the type of data being sorted. The sorting algorithm would act as the Context, while the different sorting algorithms (such as "Bubble Sort", "Quick Sort", "Merge Sort") would act as Concrete Strategy classes. When a user wants to sort a particular dataset, the sorting algorithm would delegate the sorting behavior to the appropriate sorting strategy.
+
+Payment Processing: A payment processing system can use the Strategy Pattern to change its behavior based on the payment method being used. The payment processing system would act as the Context, while the different payment methods (such as "Credit Card", "PayPal", "Venmo") would act as Concrete Strategy classes. When a user wants to make a payment, the payment processing system would delegate the payment behavior to the appropriate payment strategy.
+
+Overall, the Strategy Pattern is useful when you need to change the behavior of an object at runtime without changing the implementation of the object itself. It can be applied in a wide range of contexts, from sorting algorithms to payment processing systems.
