@@ -3,10 +3,10 @@ package com.fdymendo.learning.designpatterns.structural.decorator.controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import com.fdymendo.learning.designpatterns.structural.decorator.model.Coffee;
 import com.fdymendo.learning.designpatterns.structural.decorator.model.Milk;
 import com.fdymendo.learning.designpatterns.structural.decorator.model.SimpleCoffee;
 import com.fdymendo.learning.designpatterns.structural.decorator.model.Sugar;
+import com.fdymendo.learning.designpatterns.structural.decorator.service.Coffee;
 
 @RestController
 @RequestMapping("/Decorator/v1")

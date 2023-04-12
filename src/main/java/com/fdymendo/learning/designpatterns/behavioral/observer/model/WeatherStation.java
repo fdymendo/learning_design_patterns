@@ -2,9 +2,14 @@ package com.fdymendo.learning.designpatterns.behavioral.observer.model;
 
 import java.util.ArrayList;
 import java.util.List;
+import com.fdymendo.learning.designpatterns.behavioral.observer.service.Observable;
+import com.fdymendo.learning.designpatterns.behavioral.observer.service.Observer;
+import lombok.Data;
 
 // Concrete Observable class
+@Data
 public class WeatherStation implements Observable {
+
   private List<Observer> observers;
   private int temperature;
 
@@ -24,10 +29,6 @@ public class WeatherStation implements Observable {
     for (Observer observer : observers) {
       observer.update();
     }
-  }
-
-  public int getTemperature() {
-    return temperature;
   }
 
   public void setTemperature(int temperature) {

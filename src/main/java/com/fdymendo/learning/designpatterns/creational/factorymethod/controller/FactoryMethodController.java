@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import com.fdymendo.learning.designpatterns.creational.factorymethod.model.Character;
+import com.fdymendo.learning.designpatterns.creational.factorymethod.service.Character;
 import com.fdymendo.learning.designpatterns.creational.factorymethod.service.CharacterFactory;
 
 @RestController

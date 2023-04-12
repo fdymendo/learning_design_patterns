@@ -12,11 +12,17 @@ import lombok.extern.log4j.Log4j2;
 @RequestMapping("/Flyweight/v1")
 public class FlyweightController {
 
+  private PointFactory pointFactory;
+
+  public FlyweightController(PointFactory pointFactory) {
+    this.pointFactory = pointFactory;
+  }
+
   @GetMapping("/GetPoint")
   public String getPoint() {
-    Point p1 = PointFactory.getPoint(0, 0);
-    Point p2 = PointFactory.getPoint(1, 1);
-    Point p3 = PointFactory.getPoint(0, 0);
+    Point p1 = this.pointFactory.getPoint(0, 0);
+    Point p2 = this.pointFactory.getPoint(1, 1);
+    Point p3 = this.pointFactory.getPoint(0, 0);
 
     log.info(p1 == p2); // false
     log.info(p1 == p3); // true

@@ -1,6 +1,10 @@
 package com.fdymendo.learning.designpatterns.structural.decorator.model;
 
+import com.fdymendo.learning.designpatterns.structural.decorator.service.Coffee;
+import com.fdymendo.learning.designpatterns.structural.decorator.service.CoffeeDecorator;
+
 public class Sugar extends CoffeeDecorator {
+  
   public Sugar(Coffee coffee) {
     super(coffee);
   }

@@ -1,5 +1,7 @@
 package com.fdymendo.learning.designpatterns.structural.decorator.model;
 
+import com.fdymendo.learning.designpatterns.structural.decorator.service.Coffee;
+
 public class SimpleCoffee implements Coffee {
 
   @Override

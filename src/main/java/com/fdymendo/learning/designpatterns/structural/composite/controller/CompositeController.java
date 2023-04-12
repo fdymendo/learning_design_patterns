@@ -3,9 +3,9 @@ package com.fdymendo.learning.designpatterns.structural.composite.controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import com.fdymendo.learning.designpatterns.structural.composite.model.File;
 import com.fdymendo.learning.designpatterns.structural.composite.service.Component;
 import com.fdymendo.learning.designpatterns.structural.composite.service.Directory;
-import com.fdymendo.learning.designpatterns.structural.composite.service.File;
 
 @RestController
 @RequestMapping("/Composite/v1")

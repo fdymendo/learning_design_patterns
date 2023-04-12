@@ -2,13 +2,12 @@ package com.fdymendo.learning.designpatterns.creational.factorymethod.service;
 
 import org.springframework.stereotype.Service;
 import com.fdymendo.learning.designpatterns.creational.factorymethod.model.Archer;
-import com.fdymendo.learning.designpatterns.creational.factorymethod.model.Character;
 import com.fdymendo.learning.designpatterns.creational.factorymethod.model.Mage;
 import com.fdymendo.learning.designpatterns.creational.factorymethod.model.Warrior;
 
 @Service
 public class CharacterFactory {
-  
+
   public Character createCharacter(String characterType) {
     if (characterType.equals("Warrior")) {
       return new Warrior();
@@ -20,5 +19,5 @@ public class CharacterFactory {
       throw new IllegalArgumentException("Invalid character type: " + characterType);
     }
   }
-  
+
 }

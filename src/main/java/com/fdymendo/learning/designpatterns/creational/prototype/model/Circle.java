@@ -4,6 +4,7 @@ import com.fdymendo.learning.designpatterns.creational.prototype.service.Shape;
 
 
 public class Circle extends Shape {
+  
   public Circle() {
     setType("Circle");
   }

@@ -1,10 +1,12 @@
 package com.fdymendo.learning.designpatterns.behavioral.strategy.model;
 
+import com.fdymendo.learning.designpatterns.behavioral.strategy.service.PaymentStrategy;
 import lombok.Data;
 
 // Concrete strategy classes
 @Data
 public class CreditCardPayment implements PaymentStrategy {
+  
   private String cardNumber;
   private String cardHolderName;
   private String expiryDate;
