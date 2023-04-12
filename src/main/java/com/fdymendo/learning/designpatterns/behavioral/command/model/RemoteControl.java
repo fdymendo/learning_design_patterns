@@ -1,5 +1,7 @@
 package com.fdymendo.learning.designpatterns.behavioral.command.model;
 
+import com.fdymendo.learning.designpatterns.behavioral.command.service.Command;
+
 // Invoker Object
 public class RemoteControl {
   private Command command;

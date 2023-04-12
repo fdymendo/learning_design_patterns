@@ -1,9 +1,11 @@
 package com.fdymendo.learning.designpatterns.behavioral.strategy.model;
 
+import com.fdymendo.learning.designpatterns.behavioral.strategy.service.PaymentStrategy;
 import lombok.Data;
 
 @Data
 public class PayPalPayment implements PaymentStrategy {
+
   private String email;
   private String password;
 

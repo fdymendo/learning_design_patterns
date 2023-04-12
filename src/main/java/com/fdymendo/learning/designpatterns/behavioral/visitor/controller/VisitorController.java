@@ -5,9 +5,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import com.fdymendo.learning.designpatterns.behavioral.visitor.model.Book;
 import com.fdymendo.learning.designpatterns.behavioral.visitor.model.Fruit;
-import com.fdymendo.learning.designpatterns.behavioral.visitor.model.ShoppingCartElement;
-import com.fdymendo.learning.designpatterns.behavioral.visitor.model.ShoppingCartVisitor;
 import com.fdymendo.learning.designpatterns.behavioral.visitor.model.ShoppingCartVisitorImpl;
+import com.fdymendo.learning.designpatterns.behavioral.visitor.service.ShoppingCartElement;
+import com.fdymendo.learning.designpatterns.behavioral.visitor.service.ShoppingCartVisitor;
 
 @RestController
 @RequestMapping("/Visitor/v1")
@@ -25,5 +25,5 @@ public class VisitorController {
 
     return "Total price: " + visitor.getTotalPrice();
   }
-  
+
 }

@@ -13,7 +13,6 @@ public class SingletonController {
   @GetMapping("/Singleton")
   public ResponseEntity<String> getSingleton() {
     Singleton singleton = Singleton.getInstance();
-
     return ResponseEntity.ok(singleton.toString());
   }
 

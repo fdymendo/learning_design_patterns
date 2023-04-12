@@ -5,7 +5,7 @@ import java.util.List;
 import com.fdymendo.learning.designpatterns.creational.builder.model.Pizza;
 
 public class HawaiianPizzaBuilder implements PizzaBuilder {
-  
+
   private String size;
   private String crustType;
   private String sauceType;
