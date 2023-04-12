@@ -1,13 +1,12 @@
 package com.fdymendo.learning.designpatterns.structural.flyweight.model;
 
+import lombok.AllArgsConstructor;
+
+@AllArgsConstructor
 public class Point {
+  
   private int x;
   private int y;
-
-  public Point(int x, int y) {
-    this.x = x;
-    this.y = y;
-  }
 
   public String draw() {
     // draw the point on a canvas

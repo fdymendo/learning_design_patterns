@@ -3,10 +3,10 @@ package com.fdymendo.learning.designpatterns.behavioral.chainresponsability.cont
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import com.fdymendo.learning.designpatterns.behavioral.chainresponsability.model.Handler;
 import com.fdymendo.learning.designpatterns.behavioral.chainresponsability.model.HighValueHandler;
 import com.fdymendo.learning.designpatterns.behavioral.chainresponsability.model.LowValueHandler;
-import com.fdymendo.learning.designpatterns.behavioral.chainresponsability.model.Request;
+import com.fdymendo.learning.designpatterns.behavioral.chainresponsability.service.Handler;
+import com.fdymendo.learning.designpatterns.behavioral.chainresponsability.service.Request;
 
 @RestController
 @RequestMapping("/ChainResponsability/v1")

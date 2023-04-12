@@ -4,7 +4,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import com.fdymendo.learning.designpatterns.behavioral.templatemethod.model.OnlineOrder;
-import com.fdymendo.learning.designpatterns.behavioral.templatemethod.model.OrderProcessTemplate;
+import com.fdymendo.learning.designpatterns.behavioral.templatemethod.service.OrderProcessTemplate;
 
 @RestController
 @RequestMapping("/TemplateMethod/v1")

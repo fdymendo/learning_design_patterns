@@ -18,7 +18,6 @@ public class StrategyController {
     cart.addItem(new Item("Shirt", 20.0));
     cart.addItem(new Item("Pants", 30.0));
     cart.setPaymentStrategy(new CreditCardPayment("1234567890123456", "John Doe", "10/25", 123));
-
     return cart.pay(); // Outputs "$50.0 paid with credit card 1234567890123456"
   }
 
@@ -28,7 +27,6 @@ public class StrategyController {
     cart.addItem(new Item("Shirt", 20.0));
     cart.addItem(new Item("Pants", 30.0));
     cart.setPaymentStrategy(new PayPalPayment("johndoe@example.com", "password123"));
-
     return cart.pay(); // Outputs "$50.0 paid with PayPal"
   }
 

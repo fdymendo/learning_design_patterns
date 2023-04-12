@@ -1,5 +1,6 @@
 package com.fdymendo.learning.designpatterns.creational.factorymethod.model;
 
+import com.fdymendo.learning.designpatterns.creational.factorymethod.service.Character;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 

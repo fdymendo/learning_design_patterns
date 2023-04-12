@@ -1,14 +1,15 @@
 package com.fdymendo.learning.designpatterns.behavioral.memento.model;
 
-//Memento Class
+import lombok.Data;
+
+// Memento Class
+@Data
 public class TextEditorMemento {
- private String state;
  
- public TextEditorMemento(String state) {
-     this.state = state;
- }
- 
- public String getState() {
-     return state;
- }
+  private String state;
+
+  public TextEditorMemento(String state) {
+    this.state = state;
+  }
+  
 }

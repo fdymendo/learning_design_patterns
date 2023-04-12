@@ -4,7 +4,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import com.fdymendo.learning.designpatterns.structural.adapter.service.Client;
+import com.fdymendo.learning.designpatterns.structural.adapter.model.Client;
 import com.fdymendo.learning.designpatterns.structural.adapter.service.CsvAdapter;
 import com.fdymendo.learning.designpatterns.structural.adapter.service.CsvFormatter;
 
