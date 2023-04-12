@@ -7,6 +7,7 @@ import lombok.Data;
 @Data
 @AllArgsConstructor
 public class Pizza {
+
   private String size;
   private String crustType;
   private String sauceType;

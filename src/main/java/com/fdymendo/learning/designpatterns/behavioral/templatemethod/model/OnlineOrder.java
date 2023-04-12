@@ -1,16 +1,22 @@
 package com.fdymendo.learning.designpatterns.behavioral.templatemethod.model;
 
+import com.fdymendo.learning.designpatterns.behavioral.templatemethod.service.OrderProcessTemplate;
+import lombok.extern.log4j.Log4j2;
+
 // Concrete class implementing the template method
+@Log4j2
 public class OnlineOrder extends OrderProcessTemplate {
+
   public void selectProduct() {
-    System.out.println("Product selected from online store.");
+    log.info("Product selected from online store.");
   }
 
   public void doPayment() {
-    System.out.println("Payment made through online payment gateway.");
+    log.info("Payment made through online payment gateway.");
   }
 
   public void deliverProduct() {
-    System.out.println("Product delivered by courier.");
+    log.info("Product delivered by courier.");
   }
+
 }

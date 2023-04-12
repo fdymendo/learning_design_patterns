@@ -1,16 +1,17 @@
 package com.fdymendo.learning.designpatterns.structural.flyweight.service;
 
 import java.util.HashMap;
+import org.springframework.stereotype.Service;
 import com.fdymendo.learning.designpatterns.structural.flyweight.model.Point;
 
+@Service
 public class PointFactory {
-  private static final HashMap<String, Point> points = new HashMap<>();
 
-  public static Point getPoint(int x, int y) {
+  private HashMap<String, Point> points = new HashMap<>();
+
+  public Point getPoint(int x, int y) {
     String key = x + "," + y;
-    if (!points.containsKey(key)) {
-      points.put(key, new Point(x, y));
-    }
-    return points.get(key);
+    return points.computeIfAbsent(key, k -> new Point(x, y));
   }
+
 }

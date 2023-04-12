@@ -5,6 +5,7 @@ import java.util.List;
 
 // Caretaker Class
 public class TextEditorCareTaker {
+ 
   private List<TextEditorMemento> mementos = new ArrayList<TextEditorMemento>();
 
   public void addMemento(TextEditorMemento memento) {
@@ -14,4 +15,5 @@ public class TextEditorCareTaker {
   public TextEditorMemento getMemento(int index) {
     return mementos.get(index);
   }
+  
 }

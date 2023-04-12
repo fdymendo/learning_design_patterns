@@ -1,7 +1,12 @@
 package com.fdymendo.learning.designpatterns.structural.bridge.model;
 
+import com.fdymendo.learning.designpatterns.structural.bridge.service.Color;
+import com.fdymendo.learning.designpatterns.structural.bridge.service.Shape;
+
 public class Circle extends Shape {
-  private int x, y, radius;
+  private int x;
+  private int y;
+  private int radius;
 
   public Circle(int x, int y, int radius, Color color) {
     super(color);

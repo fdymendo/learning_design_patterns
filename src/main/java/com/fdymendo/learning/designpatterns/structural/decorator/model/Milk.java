@@ -1,6 +1,10 @@
 package com.fdymendo.learning.designpatterns.structural.decorator.model;
 
+import com.fdymendo.learning.designpatterns.structural.decorator.service.Coffee;
+import com.fdymendo.learning.designpatterns.structural.decorator.service.CoffeeDecorator;
+
 public class Milk extends CoffeeDecorator {
+  
   public Milk(Coffee coffee) {
     super(coffee);
   }
@@ -14,4 +18,5 @@ public class Milk extends CoffeeDecorator {
   public String getDescription() {
     return super.getDescription() + ", milk" + " costs $" + coffee.getCost();
   }
+  
 }

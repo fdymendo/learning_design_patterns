@@ -2,14 +2,16 @@ package com.fdymendo.learning.designpatterns.behavioral.strategy.model;
 
 import java.util.ArrayList;
 import java.util.List;
+import com.fdymendo.learning.designpatterns.behavioral.strategy.service.PaymentStrategy;
 
 // Context class
 public class ShoppingCart {
+  
   private List<Item> items;
   private PaymentStrategy paymentStrategy;
 
   public ShoppingCart() {
-    items = new ArrayList<Item>();
+    items = new ArrayList<>();
   }
 
   public void addItem(Item item) {
