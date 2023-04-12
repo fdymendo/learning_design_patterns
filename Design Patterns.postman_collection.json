@@ -566,6 +566,31 @@
 							"response": []
 						}
 					]
+				},
+				{
+					"name": "Visitor",
+					"item": [
+						{
+							"name": "Shopping Cart Value",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{server}}/Visitor/v1/ShoppingCart/Value",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"Visitor",
+										"v1",
+										"ShoppingCart",
+										"Value"
+									]
+								}
+							},
+							"response": []
+						}
+					]
 				}
 			]
 		},
