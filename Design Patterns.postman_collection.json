@@ -404,6 +404,193 @@
 							"response": []
 						}
 					]
+				},
+				{
+					"name": "Memento",
+					"item": [
+						{
+							"name": "Send Message Copy",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{server}}/Memento/v1/RestoreItem",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"Memento",
+										"v1",
+										"RestoreItem"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Observer",
+					"item": [
+						{
+							"name": "State App",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{server}}/Observer/v1/StateApp",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"Observer",
+										"v1",
+										"StateApp"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "State",
+					"item": [
+						{
+							"name": "Close Door",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{server}}/State/v1/Door/close",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"State",
+										"v1",
+										"Door",
+										"close"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Open Door",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{server}}/State/v1/Door/open",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"State",
+										"v1",
+										"Door",
+										"open"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Strategy",
+					"item": [
+						{
+							"name": "Payment Credit Card",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{server}}/Strategy/v1/Payment/CreditCard",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"Strategy",
+										"v1",
+										"Payment",
+										"CreditCard"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Payment Paypal",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{server}}/Strategy/v1/Payment/PayPal",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"Strategy",
+										"v1",
+										"Payment",
+										"PayPal"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Template Method",
+					"item": [
+						{
+							"name": "Process order",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{server}}/TemplateMethod/v1/ProcessOrder",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"TemplateMethod",
+										"v1",
+										"ProcessOrder"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Visitor",
+					"item": [
+						{
+							"name": "Shopping Cart Value",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{server}}/Visitor/v1/ShoppingCart/Value",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"Visitor",
+										"v1",
+										"ShoppingCart",
+										"Value"
+									]
+								}
+							},
+							"response": []
+						}
+					]
 				}
 			]
 		},

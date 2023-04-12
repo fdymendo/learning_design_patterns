@@ -276,3 +276,81 @@ Text Editors: A text editor can use the Memento Pattern to implement an "Undo" f
 Games: A game can use the Memento Pattern to implement a "Save Game" feature. When the player reaches a certain checkpoint or completes a level, the game creates a Memento object that captures the game's state (such as the player's health, location, and progress). The Memento is then passed to a caretaker object (such as a save game manager) for safekeeping. If the player later chooses to resume the game from a saved point, the game can request that the caretaker restore the game's state from the appropriate Memento.
 
 Overall, the Memento Pattern is useful when you need to be able to save and restore the state of an object without exposing its internal details to the rest of the system. It can be applied in a wide range of contexts, from text editors to games.
+
+### Observer
+
+The Observer Pattern is a behavioral pattern that allows one or more objects to be notified of changes to the state of another object. It is used to establish a one-to-many dependency between objects, where changes to one object can automatically trigger updates in the other objects.
+
+Here's a brief description of how the Observer Pattern works:
+
+The Subject (or Observable) is the object that needs to be monitored for changes to its state.
+The Observers are the objects that need to be notified of changes to the Subject's state.
+When the Subject's state changes, it notifies all of its Observers by calling a method on each Observer.
+Each Observer can then retrieve the updated state of the Subject and take appropriate action.
+Two examples of implementation of the Observer Pattern are:
+
+Stock Market: A stock market can use the Observer Pattern to notify investors of changes in stock prices. The market would act as the Subject, while the investors would act as Observers. When the price of a stock changes, the market would notify all of its investors by calling a method on each Observer. Each investor could then retrieve the updated stock price and decide whether to buy, sell, or hold their shares.
+
+Weather Station: A weather station can use the Observer Pattern to notify people of changes in weather conditions. The station would act as the Subject, while people (such as hikers or farmers) would act as Observers. When the weather changes (such as a drop in temperature or an increase in wind speed), the station would notify all of its Observers by calling a method on each one. Each person could then retrieve the updated weather conditions and decide whether to change their plans (such as staying indoors or wearing warmer clothing).
+
+Overall, the Observer Pattern is useful when you need to establish a one-to-many relationship between objects, where changes to one object need to be automatically propagated to other objects. It can be applied in a wide range of contexts, from stock markets to weather stations.
+
+### State
+
+The State Pattern is a behavioral pattern that allows an object to change its behavior when its internal state changes. It is useful when an object needs to perform different operations based on its current state, and when adding new states can lead to a lot of conditional statements.
+
+Here's a brief description of how the State Pattern works:
+
+The Context is the object that needs to change its behavior based on its internal state.
+The State is an interface or abstract class that defines the behavior of the Context based on its internal state.
+Concrete State classes implement the State interface or abstract class and provide different implementations of the behavior based on the internal state of the Context.
+When the internal state of the Context changes, it updates its current State object to the appropriate Concrete State object.
+Two examples of implementation of the State Pattern are:
+
+Vending Machine: A vending machine can use the State Pattern to change its behavior based on the amount of money inserted and the availability of the selected item. The vending machine would act as the Context, while the different states (such as "No Money", "Not Enough Money", "Enough Money", "Sold Out") would act as Concrete State classes. When a user inserts money and selects an item, the vending machine would update its internal state and change its behavior accordingly (such as dispensing the item or returning the money).
+
+Traffic Light: A traffic light can use the State Pattern to change its behavior based on the current state of traffic flow. The traffic light would act as the Context, while the different states (such as "Green Light", "Yellow Light", "Red Light") would act as Concrete State classes. When traffic flow changes (such as heavy traffic or an accident), the traffic light would update its internal state and change its behavior accordingly (such as extending the duration of the red light).
+
+Overall, the State Pattern is useful when an object needs to change its behavior based on its internal state, and when adding new states can lead to a lot of conditional statements. It can be applied in a wide range of contexts, from vending machines to traffic lights.
+
+
+### Strategy
+
+The Strategy Pattern is a behavioral pattern that allows you to define a family of algorithms, encapsulate each one as an object, and make them interchangeable. It allows you to change the behavior of an object at runtime without changing the implementation of the object itself.
+
+Here's a brief description of how the Strategy Pattern works:
+
+The Context is the object that needs to perform a particular behavior.
+The Strategy is an interface or abstract class that defines the behavior that the Context can use.
+Concrete Strategy classes implement the Strategy interface or abstract class and provide different implementations of the behavior.
+The Context holds a reference to a Strategy object and delegates behavior to it.
+Two examples of implementation of the Strategy Pattern are:
+
+Sorting Algorithms: A sorting algorithm can use the Strategy Pattern to change its behavior based on the type of data being sorted. The sorting algorithm would act as the Context, while the different sorting algorithms (such as "Bubble Sort", "Quick Sort", "Merge Sort") would act as Concrete Strategy classes. When a user wants to sort a particular dataset, the sorting algorithm would delegate the sorting behavior to the appropriate sorting strategy.
+
+Payment Processing: A payment processing system can use the Strategy Pattern to change its behavior based on the payment method being used. The payment processing system would act as the Context, while the different payment methods (such as "Credit Card", "PayPal", "Venmo") would act as Concrete Strategy classes. When a user wants to make a payment, the payment processing system would delegate the payment behavior to the appropriate payment strategy.
+
+Overall, the Strategy Pattern is useful when you need to change the behavior of an object at runtime without changing the implementation of the object itself. It can be applied in a wide range of contexts, from sorting algorithms to payment processing systems.
+
+### Visitor
+
+The Visitor Pattern is a behavioral design pattern that allows you to add new operations or behaviors to an object without modifying the object itself. It is based on the principle of separating the algorithm from the object structure on which it operates.
+
+The Visitor Pattern consists of four main components:
+
+Visitor: an abstract class or interface that defines a set of methods, each corresponding to a specific operation or behavior that can be performed on an object structure.
+ConcreteVisitor: a concrete class that implements the Visitor interface and provides the actual implementation for the operations defined by the Visitor.
+
+Element: an abstract class or interface that defines a set of methods that allow the Visitor to access and operate on the elements of the object structure.
+
+ConcreteElement: a concrete class that implements the Element interface and provides the actual implementation for the methods defined by the Element.
+
+The Visitor Pattern works by allowing the Visitor to visit each element in the object structure, and then perform the appropriate operation or behavior on that element. This is accomplished by having the Element accept the Visitor, which then calls the appropriate method on the Visitor.
+
+Two examples of implementation of the Visitor Pattern are:
+
+Tax Calculation: In a financial application, the Visitor Pattern can be used to implement tax calculation. The Element interface would define methods to traverse the different types of financial transactions, while the Concrete Elements would represent the different types of transactions, such as stocks or bonds. The Visitor interface would define methods to perform specific operations on the transactions, such as calculating the tax owed.
+
+Game Development: In a game development application, the Visitor Pattern can be used to implement game object interactions. The Element interface would define methods to traverse the different game objects, while the Concrete Elements would represent the different types of game objects, such as enemies or power-ups. The Visitor interface would define methods to perform specific operations on the game objects, such as applying damage to enemies or awarding points for collecting power-ups.
+
+Overall, the Visitor Pattern is a powerful tool for adding new behaviors to an object structure without modifying the objects themselves. It is widely used in a variety of applications, including financial systems and game development.
