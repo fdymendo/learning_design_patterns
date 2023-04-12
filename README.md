@@ -314,7 +314,7 @@ Traffic Light: A traffic light can use the State Pattern to change its behavior 
 Overall, the State Pattern is useful when an object needs to change its behavior based on its internal state, and when adding new states can lead to a lot of conditional statements. It can be applied in a wide range of contexts, from vending machines to traffic lights.
 
 
-###
+### Strategy
 
 The Strategy Pattern is a behavioral pattern that allows you to define a family of algorithms, encapsulate each one as an object, and make them interchangeable. It allows you to change the behavior of an object at runtime without changing the implementation of the object itself.
 
@@ -331,3 +331,26 @@ Sorting Algorithms: A sorting algorithm can use the Strategy Pattern to change i
 Payment Processing: A payment processing system can use the Strategy Pattern to change its behavior based on the payment method being used. The payment processing system would act as the Context, while the different payment methods (such as "Credit Card", "PayPal", "Venmo") would act as Concrete Strategy classes. When a user wants to make a payment, the payment processing system would delegate the payment behavior to the appropriate payment strategy.
 
 Overall, the Strategy Pattern is useful when you need to change the behavior of an object at runtime without changing the implementation of the object itself. It can be applied in a wide range of contexts, from sorting algorithms to payment processing systems.
+
+### Visitor
+
+The Visitor Pattern is a behavioral design pattern that allows you to add new operations or behaviors to an object without modifying the object itself. It is based on the principle of separating the algorithm from the object structure on which it operates.
+
+The Visitor Pattern consists of four main components:
+
+Visitor: an abstract class or interface that defines a set of methods, each corresponding to a specific operation or behavior that can be performed on an object structure.
+ConcreteVisitor: a concrete class that implements the Visitor interface and provides the actual implementation for the operations defined by the Visitor.
+
+Element: an abstract class or interface that defines a set of methods that allow the Visitor to access and operate on the elements of the object structure.
+
+ConcreteElement: a concrete class that implements the Element interface and provides the actual implementation for the methods defined by the Element.
+
+The Visitor Pattern works by allowing the Visitor to visit each element in the object structure, and then perform the appropriate operation or behavior on that element. This is accomplished by having the Element accept the Visitor, which then calls the appropriate method on the Visitor.
+
+Two examples of implementation of the Visitor Pattern are:
+
+Tax Calculation: In a financial application, the Visitor Pattern can be used to implement tax calculation. The Element interface would define methods to traverse the different types of financial transactions, while the Concrete Elements would represent the different types of transactions, such as stocks or bonds. The Visitor interface would define methods to perform specific operations on the transactions, such as calculating the tax owed.
+
+Game Development: In a game development application, the Visitor Pattern can be used to implement game object interactions. The Element interface would define methods to traverse the different game objects, while the Concrete Elements would represent the different types of game objects, such as enemies or power-ups. The Visitor interface would define methods to perform specific operations on the game objects, such as applying damage to enemies or awarding points for collecting power-ups.
+
+Overall, the Visitor Pattern is a powerful tool for adding new behaviors to an object structure without modifying the objects themselves. It is widely used in a variety of applications, including financial systems and game development.
